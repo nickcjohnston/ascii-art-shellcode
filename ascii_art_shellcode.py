@@ -153,7 +153,7 @@ def assemble_and_link_asm_file(asmfile, filename):
     subprocess.run(["ld", "-melf_i386", objfile, "-o", outfile])
 
     # Comment these out if you want to examine the assembly file
-    #os.remove(asmfile)
+    os.remove(asmfile)
     os.remove(objfile)
 
     return outfile
