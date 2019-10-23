@@ -3,6 +3,8 @@ Generate shellcode to print ascii art for simple buffer overflows. Mostly wrote 
 
 Includes a sample ascii art file taken from <https://asciiart.website/index.php?art=animals/bats>
 
+The basic usage below assumes ASLR is disabled. (i.e. `sudo sysctl kernel.randomize_va_space=0` on Debian)
+
 ## Basic Usage
 `$ python3 ./ascii_art_shellcode.py bats.ascii`
 
